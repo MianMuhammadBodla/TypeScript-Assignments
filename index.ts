@@ -1,3 +1,15 @@
-//Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
-let personname:string = "Muhammad";
-console.log(`Hello ${personname} whats going on?`);
+//Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
+let personName:string ="Muhammad";
+
+let lowercaseName:string=personName.toLowerCase();
+console.log(lowercaseName);
+
+let uppercaseName:string=personName.toUpperCase();
+console.log(uppercaseName);
+let word=personName.split("");
+
+const titleCase = personName
+  .split(" ")
+  .map((word) => word[0].toUpperCase() + word.slice(1).toLowerCase())
+  .join(" ");
+console.log (titleCase);
