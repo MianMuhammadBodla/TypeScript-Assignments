@@ -1,15 +1,3 @@
-//Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
-let personName:string ="Muhammad";
+//Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks: 
 
-let lowercaseName:string=personName.toLowerCase();
-console.log(lowercaseName);
-
-let uppercaseName:string=personName.toUpperCase();
-console.log(uppercaseName);
-let word=personName.split("");
-
-const titleCase = personName
-  .split(" ")
-  .map((word) => word[0].toUpperCase() + word.slice(1).toLowerCase())
-  .join(" ");
-console.log (titleCase);
+console.log('Allama-e-Iqbal once Said,"Nations are born in the hearts of poets, they prosper and die in the hands of politicians"');
