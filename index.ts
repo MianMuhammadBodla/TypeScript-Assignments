@@ -1,5 +1,5 @@
-//Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
-
-let famousPerson:string = "Allama-e-Iqbal";
-let message:string = famousPerson + ' Once Said, "Islam is itself destiny and will not suffer destiny."';
-console.log(message);
+//Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+let personName:string="\t   Muhammad   \n";
+console.log("Name with whitespaces:",personName);
+let strippedname:string=personName.trim();
+console.log("Stripped name:",strippedname);
