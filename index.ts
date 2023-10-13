@@ -1,8 +1,11 @@
-//Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
+//Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+let favoriteTransportation:Array<[Transport:string,Brand:string,Model:number]>=[]
 
-let FriendsNames:string[]=['Ali Salman','Muhammad Ali Malik','Diyan','Arslan','Abdullah','Fahad','Zain','AbuBakar','Awais','Adnan'];
+favoriteTransportation.push(["Bicycle","Phoniex",2023]);
+favoriteTransportation.push(["HeavyBike","Honda",2023]);
+favoriteTransportation.push(["Revo","Toyata",2023]);
 
-for (let name of FriendsNames){
-
-    console.log(`Good Night ${name} Time sa So bhi Giya karo`);
-}
+favoriteTransportation.forEach(([Transport, Brand, Model])=>
+{console.log(
+    `I like to own ${Transport} with a brand of ${Brand}, and the model is ${Model}`
+)});
