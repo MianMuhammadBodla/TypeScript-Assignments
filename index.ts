@@ -1,7 +1,13 @@
-//Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
+//Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
 
-//In Given Code I print My Name and Today,s Date
-/*let personName:string="Muhammad";
-console.log(personName);
-let todayDate = "13 October 2023"
-console.log(todayDate);*/
+let FriendsNames:string[]=['Ali Salman','Muhammad Ali Malik','Diyan','Arslan','Abdullah','Fahad','Zain','AbuBakar','Awais','Adnan'];
+console.log(FriendsNames[0]);
+console.log(FriendsNames[1]);
+console.log(FriendsNames[2]);
+console.log(FriendsNames[3]);
+console.log(FriendsNames[4]);
+console.log(FriendsNames[5]);
+console.log(FriendsNames[6]);
+console.log(FriendsNames[7]);
+console.log(FriendsNames[8]);
+console.log(FriendsNames[9]);
