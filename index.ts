@@ -1,5 +1,9 @@
-//Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
-let personName:string="\t   Muhammad   \n";
-console.log("Name with whitespaces:",personName);
-let strippedname:string=personName.trim();
-console.log("Stripped name:",strippedname);
+//Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
+const AdditionResult= 2+6;
+console.log("Addition Result=",AdditionResult);
+const SubtractionResult= 3-5;
+console.log("Subtraction Result=",SubtractionResult);
+const multiplicationResult=6*6;
+console.log("Multiplication Result=",multiplicationResult);
+const divisionResult = 20/4;
+console.log("Division Result=",divisionResult);
