@@ -1,11 +1,13 @@
-//Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
-let favoriteTransportation:Array<[Transport:string,Brand:string,Model:number]>=[]
+//Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
 
-favoriteTransportation.push(["Bicycle","Phoniex",2023]);
-favoriteTransportation.push(["HeavyBike","Honda",2023]);
-favoriteTransportation.push(["Revo","Toyata",2023]);
+let GuestList:Array<string>=[
+"Sultan Muhammad Ali",
+"Sultan Ahmad Ali",
+"Sultan Bhudhar Aziz",
+"Mian Sarwar Bodla"
+];
+GuestList.forEach((guestname) =>{
 
-favoriteTransportation.forEach(([Transport, Brand, Model])=>
-{console.log(
-    `I like to own ${Transport} with a brand of ${Brand}, and the model is ${Model}`
-)});
+console.log(`Dear ${guestname} you are invited in dinner, please join us`)
+
+});
