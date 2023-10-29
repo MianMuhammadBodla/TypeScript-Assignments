@@ -1,13 +1,36 @@
-//Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
-let mountains = "kato";
-let rivers = "ravi";
-let countries = "pakistan,china,canada,kuwait,saudi,australia";
-let cities = "lahore,islamabad";
-let languages = "urdu,english";
-//array declaration
-let array = {mountains,rivers,countries,cities,languages};
-console.log("mountains,the biggest mountain in the pakistan is kato");
-console.log("rivers,the ravi is the river of pakistan located in lahore");
-console.log("countries,pakistan nebiour country is china or india ");
-console.log("cities,lahore is the historical city of pakistan,islamabad is the capital of pakistan ");
-console.log("languages,the nationallanguage of pakistan is urdu,english is the british language that can use all over the world");
+//They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+//object
+interface Item {
+    name: string ;
+    description : string ;
+    price : number;
+}
+//item1
+const item1 :Item = {
+    name:"camera",
+    description:"a camera for taking picture",
+    price : 220,
+}
+//item2
+const item2 :Item = {
+    name:"iphone15pro",
+    description:"iphone15pro is best for taking picture",
+    price : 1100,
+}
+//item3
+const item3 :Item = {
+    name:"macbookpro2023",
+    description:"macbook pro is best for AI(Artifical Intelligence)",
+    price : 1500,
+}
+//console.log
+const items: Item[] = [item1, item2, item3];
+console.log(item1.name);
+console.log(item2.description);
+console.log(item3.price);
+//loop 
+for (const item of items) {
+    console.log(item.name);
+    console.log(item.description);
+    console.log(item.price);
+  }
