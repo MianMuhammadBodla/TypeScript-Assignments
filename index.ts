@@ -1,15 +1,13 @@
-//Exercise no 19
-//Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
-
-function inviteGuests(numGuests:String){
-    console.log(`We are inviting you to dinner with ${numGuests} guests.`);
-  
-  }
-  
-  
-  inviteGuests("Ali Malik.We are inviting you to dinner ");
-  inviteGuests("Ali Salman.We are inviting you to dinner ");
-  inviteGuests("Awais Khokhar.We are inviting you to dinner ");
-  inviteGuests("Arslan.We are inviting you to dinner ");
-  inviteGuests("Diyan.We are inviting you to dinner ");
-  inviteGuests("Abdullah.We are inviting you to dinner ");
+//Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+let mountains = "kato";
+let rivers = "ravi";
+let countries = "pakistan,china,canada,kuwait,saudi,australia";
+let cities = "lahore,islamabad";
+let languages = "urdu,english";
+//array declaration
+let array = {mountains,rivers,countries,cities,languages};
+console.log("mountains,the biggest mountain in the pakistan is kato");
+console.log("rivers,the ravi is the river of pakistan located in lahore");
+console.log("countries,pakistan nebiour country is china or india ");
+console.log("cities,lahore is the historical city of pakistan,islamabad is the capital of pakistan ");
+console.log("languages,the nationallanguage of pakistan is urdu,english is the british language that can use all over the world");
