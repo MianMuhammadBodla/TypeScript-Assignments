@@ -1,14 +1,30 @@
-
-// arrow function
-
-const city_country = (city: string, country: string): string =>
+function make_album(artist: string, title: string, tracks?: number):
+{ artist: string; title: string; tracks?: number }
 {
-    return `${city}, ${country}`;
+    const album = {
+        artist,
+        title,
+        tracks
+    };
+
+    if (tracks !== undefined)
+    {
+        album.tracks = tracks;
+    }
+
+    return album;
 }
 
+// Example function calls
+const album1 = make_album('Pasoori', 'Kahni Suno');
+const album2 = make_album('Artist 2', 'Album 2', 20);
+const album3 = make_album('Artist 3', 'Album 3', 90);
 
-// Test the function with three city-country pairs
+console.log(album1);
+console.log(album2);
+console.log(album3);
 
-console.log(city_country("Islamabad", "Pakistan"));
-console.log(city_country("California", "USA"));
-console.log(city_country("Toronto", "Canada"));
+
+console.log(`${album1.artist}, ${album1.title}, ${album1.tracks}` )
+console.log(`${album2.artist}, ${album2.title}, ${album2.tracks}` )
+console.log(`${album3.artist}, ${album3.title}, ${album3.tracks}` )
