@@ -1,30 +1,15 @@
-function make_album(artist: string, title: string, tracks?: number):
-{ artist: string; title: string; tracks?: number }
+// Array of magician's names
+const magicianNames: string[] = ["Habra Cadabra","Magic Mike","Amazing Alakazam","Amazing Alakazam","Magnificent Mystic"];
+
+function show_magicians(magicians: string[]): void
 {
-    const album = {
-        artist,
-        title,
-        tracks
-    };
-
-    if (tracks !== undefined)
-    {
-        album.tracks = tracks;
+    for (const items of magicians) {
+        console.log(items);
     }
-
-    return album;
 }
 
-// Example function calls
-const album1 = make_album('Pasoori', 'Kahni Suno');
-const album2 = make_album('Artist 2', 'Album 2', 20);
-const album3 = make_album('Artist 3', 'Album 3', 90);
 
-console.log(album1);
-console.log(album2);
-console.log(album3);
+// Call the function to show the magician's names
+show_magicians(magicianNames);
 
-
-console.log(`${album1.artist}, ${album1.title}, ${album1.tracks}` )
-console.log(`${album2.artist}, ${album2.title}, ${album2.tracks}` )
-console.log(`${album3.artist}, ${album3.title}, ${album3.tracks}` )
+export{}
