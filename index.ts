@@ -1,22 +1,9 @@
-
-// Defining a function that accepts a size and the text of a message that should be printed on the Shirt.
-
-const make_shirt = (size: string, message: string):void =>
-
-{
-
-    console.log(`Size: ${size}, Message: '${message}'`);
-    
+function makeShirt(size = "Large", message = "I love my parents") {
+    return console.log(`Size: ${size}, Message: '${message}'`);
 }
-
-// 2 ways to Call the function
-
-// 1. call the function with the size and the message variables.
-let size: string = "medium";
-let message: string = "tell me about the color of the shirt"
-
-make_shirt(size, message);
-
-// 2. directly call the function
-
-make_shirt("Large", "shirt price");
+// Large shirt with default message
+makeShirt(); // Output: Size: Large, Message: 'I love my parents'
+// Medium shirt with default message
+makeShirt("Medium"); // Output: Size: Medium, Message: 'I love my parents'
+// Custom shirt with a different message and size
+makeShirt("Small", "tell me about in which color shirt are available!"); // Output: Size: Small, Message: 
