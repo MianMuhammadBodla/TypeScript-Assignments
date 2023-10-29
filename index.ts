@@ -1,9 +1,10 @@
-function makeShirt(size = "Large", message = "I love my parents") {
-    return console.log(`Size: ${size}, Message: '${message}'`);
+function describe_city(city: string, country: string = "Unknow country"): void
+{
+   return console.log(`${city} is in ${country}.`);
 }
-// Large shirt with default message
-makeShirt(); // Output: Size: Large, Message: 'I love my parents'
-// Medium shirt with default message
-makeShirt("Medium"); // Output: Size: Medium, Message: 'I love my parents'
-// Custom shirt with a different message and size
-makeShirt("Small", "tell me about in which color shirt are available!"); // Output: Size: Small, Message: 
+
+// Calling the function for three different cities
+
+describe_city("Lahore", "Pakistan");
+describe_city("Toronto"); // Using the default country value
+describe_city("California", "USA");
