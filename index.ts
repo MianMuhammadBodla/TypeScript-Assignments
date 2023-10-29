@@ -1,10 +1,14 @@
-function describe_city(city: string, country: string = "Unknow country"): void
+
+// arrow function
+
+const city_country = (city: string, country: string): string =>
 {
-   return console.log(`${city} is in ${country}.`);
+    return `${city}, ${country}`;
 }
 
-// Calling the function for three different cities
 
-describe_city("Lahore", "Pakistan");
-describe_city("Toronto"); // Using the default country value
-describe_city("California", "USA");
+// Test the function with three city-country pairs
+
+console.log(city_country("Islamabad", "Pakistan"));
+console.log(city_country("California", "USA"));
+console.log(city_country("Toronto", "Canada"));
