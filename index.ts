@@ -1,30 +1,21 @@
-/*No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
-• If the list is empty, print the message We need to find some users!
-
-• Remove all of the usernames from your array, and make sure the correct message is printed.*/
-let nonemptyuser:string[]= [];
-let username:string[] = ['ahtasham','Abtahi','Tabish',
-'shoaib'];
-function greetuser(username : string []): void {
-  if(username.length === 0)
-   {
-    console.log('we find some user!');
-    return;
+/*Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+• Store the numbers 1 through 9 in a array.
+• Loop through the array.
+• Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.*/
+const Numbers = [1,2,3,4,5,6,7,8,9];
+for (const number of Numbers){
+    let ordinal = "";
+    if (number === 1){
+        ordinal = "st";
+    }else 
+    if (number === 2){
+        ordinal= "nd";
+    }else
+    if (number === 3){
+        ordinal= "rd";
+    }else
+    {
+    ordinal = "th";
    }
-
- for(const username of 'username');
-  if(username)
-  {
-    console.log('Hello admin, would you like to see a status report?')
-  }else
-  {
-    console.log('Hello Eric, thank you for logging in again')
-  }
+  console.log(`${number}${ordinal}`);
 }
-console.log('for non empty user name:\n');
-greetuser(username);
-
-username =[];
-
-console.log('\n\nfor non empty user name:\n');
-greetuser(username);
