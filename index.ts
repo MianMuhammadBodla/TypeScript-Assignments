@@ -1,23 +1,25 @@
-/*Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
-• If the person is less than 2 years old, print a message that the person is a baby.
-• If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
-• If the person is at least 4 years old but less than 13, print a message that the person is a kid.
-• If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
-• If the person is at least 20 years old but less than 65, print a message that the person is an adult.
-• If the person is age 65 or older, print a message that the person is an elder.*/
+/*Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+• Make a array of your three favorite fruits and call it favorite_fruits.
 
-let age = 15;
+• Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas*/
+const favorite_fruits = ['apples', 'bananas', 'oranges'];
 
-if (age < 2) {
-  console.log("The person is a baby.");
-} else if (age >= 2 && age < 4) {
-  console.log("The person is a toddler.");
-} else if (age >= 4 && age < 13) {
-  console.log("The person is a kid.");
-} else if (age >= 13 && age < 20) {
-  console.log("The person is a teenager.");
-} else if (age >= 20 && age < 65) {
-  console.log("The person is an adult.");
-} else {
-  console.log("The person is an elder.");
+if (favorite_fruits.includes('apples')) {
+  console.log('You really like apples!');
+}
+
+if (favorite_fruits.includes('bananas')) {
+  console.log('You really like bananas!');
+}
+
+if (favorite_fruits.includes('oranges')) {
+  console.log('You really like oranges!');
+}
+
+if (favorite_fruits.includes('pears')) {
+  console.log('You really like pears!');
+}
+
+if (favorite_fruits.includes('grapes')) {
+  console.log('You really like grapes!');
 }
