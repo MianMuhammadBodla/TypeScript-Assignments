@@ -1,10 +1,7 @@
-let aliencolor1: string = "green";
+let aliencolor = "green";
 
-if (aliencolor1 === "green") {
-  console.log("You just earned 5 points!");
-}
-let aliencolor2: string = "red";
-
-if (aliencolor2 === "green") {
-  console.log("You just earned 5 points!");
+if (aliencolor === "green") {
+ console.log("you have earn 5 points!")
+}else{
+    console.log("you have earn 10 points!")
 }
