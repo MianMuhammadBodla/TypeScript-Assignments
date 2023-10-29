@@ -1,24 +1,19 @@
-// Array of magician's names
-const magicianNames: string[] = ["Habra Cadabra","Magic Mike","Amazing Alakazam","Amazing Alakazam","Magnificent Mystic"];
-function showMagicians(magicians: string[]): void {
-    for (const magician of magicians) {
-        console.log(magician);
+
+function makeSandwich(...items: string[]): void {
+    console.log("Sandwich Summary:");
+    if (items.length === 0) {
+        console.log("   - You ordered an empty sandwich. Please add some items.");
+    } else {
+        items.forEach((item, i) => {
+            console.log(`   ${i + 1}. ${item}`);
+        });
     }
+    console.log("\n");
 }
 
-function make_great(magicians: string[]): string[] {
-    const greatMagicians: string[] = magicians.map(magician => `the Great ${magician}`);
-    return greatMagicians;
-}
-
-
-// Modify the array to add "the Great" to each magician's name
-const greatMagicianNames: string[] = make_great(magicianNames);
-
-// Call the function to show the original magician's names
-console.log("Original Magicians:");
-showMagicians(magicianNames);
-
-// Call the function to show the great magician's names
-console.log("\nGreat Magicians:");
-showMagicians(greatMagicianNames);
+// Call the function with different numbers of arguments
+makeSandwich()
+makeSandwich("Chiken brest", "Lettuce", "Tomato", "Mayonnaise");
+makeSandwich("Beef", "Cheese", "onion");
+makeSandwich("Peanut Butter", "Jelly", "Mayonnaise", "Honey");
+    
