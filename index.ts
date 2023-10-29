@@ -1,8 +1,22 @@
-/*Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
-• Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
-• Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!*/
-const Pizzas = ['pepperoni','sausage','mushroom'];
-for (const pizza of  Pizzas){
-    console.log ('i like ${pizzas} pizzas');
+
+// Defining a function that accepts a size and the text of a message that should be printed on the Shirt.
+
+const make_shirt = (size: string, message: string):void =>
+
+{
+
+    console.log(`Size: ${size}, Message: '${message}'`);
+    
 }
-    console.log('i really like pizzas');
+
+// 2 ways to Call the function
+
+// 1. call the function with the size and the message variables.
+let size: string = "medium";
+let message: string = "tell me about the color of the shirt"
+
+make_shirt(size, message);
+
+// 2. directly call the function
+
+make_shirt("Large", "shirt price");
